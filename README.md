@@ -1,2 +1,2 @@
 # spidersNest
-A webcrawler task with scrapy.
+A webcrawler application with scrapy.
