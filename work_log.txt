@@ -1,0 +1,52 @@
+- O primeiro passo consiste na escolha do framework
+adequado para o scrapping.
+
+- Foram descobertas as opções pandas, scrapy,
+beautiful soup e selenium.
+
+- Pandas foi descartado por ser muito limitado e
+o beautiful soup por ser lento e não-portátil,
+apesar de sua facilidade de uso.
+
+- Agora a decidir entre scrapy e selenium.
+
+- O scrapy tem como ponto forte sua velocidade.
+
+- O selenium, apesar de lento, se destaca por 
+sua capacidade de interação com o javascript.
+
+- Dado o impasse, faz-se necessário
+escolher primeiro quais páginas serão analisadas, 
+para então decidir qual dos frameworks utilizar.
+
+- Foram escolhidos portais de notícias econômicas,
+sendo eles InfoMoney, Boletim Econômico e UOL Economia.
+
+- Tags que indicam título do link da matéria
+    - InfoMoney: "hl-title"
+    - Boletim Econômico: "cs-entry__title "
+    - UOL Economia: "thumb-title "
+
+- Metadados do UOL:
+    - Título: "i.custom-title"
+    - Corpo do texto: "div.text"
+    - Autor: "p.p-author-local" (Autor, Local)
+    - Data: "p.p-author time"
+    - URL: <meta property="og:url" content="https://economia.uol.com.br/imposto-de-renda/noticias/redacao/2021/03/23/fraudar-declaracao-do-imposto-de-renda-pode-dar-ate-5-anos-de-cadeia.htm">
+    - Tags:
+
+- Metadados do Boletim Econômico:
+    - Título: "h1.cs-entry__title"
+    - Corpo do texto: "div.entry-content"
+    - Autor: "div.cs-entry__author-meta"
+    - Data: "cs-meta-date"
+    - URL: <meta property="og:url" content="https://boletimeconomico.com.br/o-que-e-a-autonomia-do-banco-central/">
+    - Tags: "div.cs-entry__tags"
+
+- Metadados da InfoMoney:
+    - Título: "div.page-title-1"
+    - Corpo do texto: "div.article-content"
+    - Autor: "span.author-name"
+    - Data: "time.entry-date"
+    - URL: <meta property="og:url" content="https://www.infomoney.com.br/mercados/analistas-dizem-que-petrobras-e-vale-estao-baratas-mas-exposicao-politica-da-petroleira-torna-investimento-mais-arriscado/">
+    - Tags: "ul.article-terms"
