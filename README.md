@@ -6,6 +6,13 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
   * [InfoMoney](https://www.infomoney.com.br/)
   * [Uol Economia](https://economia.uol.com.br/)
 
+## Environment Setup
+ ```{bash}
+ $ virtualenv <env_name>
+ $ source <env_name>/bin/activate
+ (<env_name>)$ pip install -r requirements.txt
+ ```
+
 ## Set up MongoDB
   Docs: [MongoDB Docs](https://docs.mongodb.com/manual/)
   
