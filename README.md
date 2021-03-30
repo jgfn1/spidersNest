@@ -6,7 +6,7 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
   * [InfoMoney](https://www.infomoney.com.br/)
   * [Uol Economia](https://economia.uol.com.br/)
 
-## Setup MongoDB
+## Set up MongoDB
   Docs: [MongoDB Docs](https://docs.mongodb.com/manual/)
   
   After MongoDB is set, initialize the connection at a database.py file in the same folder of pipelines.py.
