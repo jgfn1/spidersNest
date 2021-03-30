@@ -109,3 +109,9 @@ website está apresentando problemas.
 - O site do Zyte está apresentando falhas,
 será realizada nova tentativa de deploy
 posteriormente com o Scrapyd.
+
+- A encapsular dados raspados em containers.
+
+- A persistir dados no MongoDB.
+
+- A criar pipeline.

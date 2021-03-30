@@ -1,4 +1,5 @@
 import scrapy
+from ..items import SpidersNestItem
 
 class UolEconomia(scrapy.Spider):
     name = 'uolEconomia'
@@ -30,17 +31,17 @@ class UolEconomia(scrapy.Spider):
         elif(author[0][0].isdigit()):
             date = author[0]
             author = ["Uol"]
-        
         author = author.split('-')[0]
-            
         tags = response.css("div.cs-entry__tags ::text").extract()
-        yield {
-            "title": title,
-            "body": body,
-            "paragraph_count": len(body),
-            "word_count": len(''.join(body).split(' ')),
-            "author": author,
-            "date": date,
-            "tags": [],
-            "url": response.url,
-        }
+        
+        items = SpidersNestItem()
+        items["title"] = title
+        items["body"] = body
+        items["paragraph_count"] = len(body)
+        items["word_count"] = len(''.join(body).split(' '))
+        items["author"] = author
+        items["date"] = date 
+        items["tags"] = []
+        items["url"] = response.url
+        
+        yield items

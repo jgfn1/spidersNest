@@ -1,4 +1,5 @@
 import scrapy
+from ..items import SpidersNestItem
 
 class InfoMoneySpider(scrapy.Spider):
     name = 'infoMoney'
@@ -16,13 +17,15 @@ class InfoMoneySpider(scrapy.Spider):
         author = response.css("span.author-name a::text").extract()
         date = response.css("time.entry-date::text").extract()
         tags = response.css("ul.article-terms a::text").extract()
-        yield {
-            "title": title,
-            "body": body[6:],
-            "paragraph_count": len(body),
-            "word_count": len(''.join(body).split(' ')),
-            "author": list(map(lambda item: item.replace('\t', '').replace('\n', ''), author)),
-            "date": date,
-            "tags": tags,
-            "url": response.url,
-        }
+        
+        items = SpidersNestItem()
+        items["title"] = title
+        items["body"] = body[6:]
+        items["paragraph_count"] = len(body)
+        items["word_count"] = len(''.join(body).split(' '))
+        items["author"] = list(map(lambda item: item.replace('\t', '').replace('\n', ''), author))
+        items["date"] = date 
+        items["tags"] = tags 
+        items["url"] = response.url
+        
+        yield items

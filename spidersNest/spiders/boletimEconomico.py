@@ -1,4 +1,5 @@
 import scrapy
+from ..items import SpidersNestItem
 
 class BoletimEconomico(scrapy.Spider):
     name = 'boletimEconomico'
@@ -16,13 +17,15 @@ class BoletimEconomico(scrapy.Spider):
         author = response.css("div.cs-entry__author-meta ::text").extract()
         date = response.css("#primary .cs-meta-date ::text")[0].extract()
         tags = response.css("div.cs-entry__tags ::text").extract()
-        yield {
-            "title": title,
-            "body": body,
-            "paragraph_count": len(body),
-            "word_count": len(''.join(body).split(' ')),
-            "author": list(map(lambda item: item.replace('\t', '').replace('\n', ''), author)),
-            "date": date,
-            "tags": tags,
-            "url": response.url,
-        }
+        
+        items = SpidersNestItem()
+        items["title"] = title
+        items["body"] = body
+        items["paragraph_count"] = len(body)
+        items["word_count"] = len(''.join(body).split(' '))
+        items["author"] = list(map(lambda item: item.replace('\t', '').replace('\n', ''), author))
+        items["date"] = date 
+        items["tags"] = tags 
+        items["url"] = response.url
+        
+        yield items

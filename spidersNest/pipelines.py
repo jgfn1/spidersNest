@@ -7,7 +7,15 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
+import pymongo
+
+
 
 class SpidersnestPipeline:
+    def __init__(self):
+        client = pymongo.MongoClient("mongodb+srv://spiderdb:spiderdb1@cluster0.i3n8n.mongodb.net/spidersNestData?retryWrites=true&w=majority")
+        db = client.spidersNestData
+        self.collection = db['spiders_data_tb']
     def process_item(self, item, spider):
+        self.collection.insert(dict(item))
         return item
