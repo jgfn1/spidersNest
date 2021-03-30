@@ -29,7 +29,7 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
   $ scrapy crawl uolEconomia -o uolEconomia.jl 
 ```
 ## Deploy
-   Docs: [Zyte (former Scrapy Cloud) Docs](https://support.zyte.com/support/solutions/22000084243)  
+   Docs: [Zyte Docs (former Scrapy Cloud)](https://support.zyte.com/support/solutions/22000084243)  
    #### E.g.:
    
    After creating your account, project in Zyte and setting up dependencies:
