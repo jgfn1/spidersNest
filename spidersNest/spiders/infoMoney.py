@@ -27,5 +27,6 @@ class InfoMoneySpider(scrapy.Spider):
         items["date"] = date 
         items["tags"] = tags 
         items["url"] = response.url
+        items["_id"] = response.url
         
         yield items

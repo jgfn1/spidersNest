@@ -15,4 +15,5 @@ class SpidersNestItem(scrapy.Item):
     date = scrapy.Field()
     tags = scrapy.Field()
     url = scrapy.Field()
+    _id = scrapy.Field()
     pass
