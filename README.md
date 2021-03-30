@@ -1,2 +1,2 @@
 # spidersNest
-A webcrawler application with scrapy.
+A webcrawler application with Scrapy, Zyte(Scrapy Cloud) and MongoDB Atlas.
