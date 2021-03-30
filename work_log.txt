@@ -28,7 +28,7 @@ sendo eles InfoMoney, Boletim Econômico e UOL Economia.
     - Boletim Econômico: "cs-entry__title "
     - UOL Economia: "thumb-title "
 
-- Metadados do UOL:
+- Metadados de artigo do UOL:
     - Título: "i.custom-title"
     - Corpo do texto: "div.text"
     - Autor: "p.p-author-local" (Autor, Local)
@@ -36,7 +36,7 @@ sendo eles InfoMoney, Boletim Econômico e UOL Economia.
     - URL: <meta property="og:url" content="https://economia.uol.com.br/imposto-de-renda/noticias/redacao/2021/03/23/fraudar-declaracao-do-imposto-de-renda-pode-dar-ate-5-anos-de-cadeia.htm">
     - Tags:
 
-- Metadados do Boletim Econômico:
+- Metadados de artigo do Boletim Econômico:
     - Título: "h1.cs-entry__title"
     - Corpo do texto: "div.entry-content"
     - Autor: "div.cs-entry__author-meta"
@@ -44,7 +44,7 @@ sendo eles InfoMoney, Boletim Econômico e UOL Economia.
     - URL: <meta property="og:url" content="https://boletimeconomico.com.br/o-que-e-a-autonomia-do-banco-central/">
     - Tags: "div.cs-entry__tags"
 
-- Metadados da InfoMoney:
+- Metadados de artigo da InfoMoney:
     - Título: "div.page-title-1"
     - Corpo do texto: "div.article-content"
     - Autor: "span.author-name"
@@ -68,5 +68,11 @@ o scrape em si e o selenium apenas em último caso
 para algum controle mais específico da página,
 e.g., clicar em algum botão de aceitar cookies.
 
+- A construir spider para o InfoMoney
 
+- Algumas das classes selecionadas via inspeção
+encontravam-se incompletas, portanto, utilizarei
+a extensão SelectorGadget.
+
+- Spider do InfoMoney completo, tempo de execução: 1.983775s
 
