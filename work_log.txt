@@ -91,5 +91,5 @@ no log de execução
 
 - O uso do selenium acabou não se
 fazendo necessário, pois foi possível
-fazer todos os scrapes apenas utilizando
+fazer todos os scrapers apenas utilizando
 o scrapy.
