@@ -101,3 +101,11 @@ do array do body.
 
 - Ainda a atualizar para contagem de
 palavras.
+
+- A analisar a possibilidade de utilizar
+o Zyte(Scrapy Cloud) para deploy, mas seu 
+website está apresentando problemas.
+
+- O site do Zyte está apresentando falhas,
+será realizada nova tentativa de deploy
+posteriormente com o Scrapyd.
