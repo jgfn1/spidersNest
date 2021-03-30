@@ -90,8 +90,8 @@ Fonte: informado no Scrapy Stats
 no log de execução
 
 - O uso do selenium acabou não se
-fazendo necessário, pois foi possível
-fazer todos os scrapers apenas utilizando
+faz necessário, pois foi possível
+fazer todos os spiders apenas utilizando
 o scrapy.
 
 - A atualizar spiders para contagem de
