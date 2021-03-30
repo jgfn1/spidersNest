@@ -6,12 +6,12 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-
+from .database import dbClient
 import pymongo
 
 class SpidersnestPipeline:
     def __init__(self):
-        client = pymongo.MongoClient("mongodb+srv://spiderdb:spiderdb1@cluster0.i3n8n.mongodb.net/spidersNestData?retryWrites=true&w=majority")
+        client = dbClient
         db = client.spidersNestData
         self.boletimEconomicoCollection = db['boletim_economico_data_tb']
         self.infoMoneyCollection = db['info_money_data_tb']
