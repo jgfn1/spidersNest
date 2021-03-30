@@ -68,7 +68,7 @@ o scrape em si e o selenium apenas em último caso
 para algum controle mais específico da página,
 e.g., clicar em algum botão de aceitar cookies.
 
-- A construir spider para o InfoMoney
+- A construir spider para o InfoMoney.
 
 - Algumas das classes selecionadas via inspeção
 encontravam-se incompletas, portanto, utilizarei
