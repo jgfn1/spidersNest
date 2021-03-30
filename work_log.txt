@@ -6,7 +6,8 @@ beautiful soup e selenium.
 
 - Pandas foi descartado por ser muito limitado e
 o beautiful soup por ser lento e não-portátil,
-apesar de sua facilidade de uso.
+apesar de sua facilidade de uso. 
+Fonte: https://www.youtube.com/watch?v=zucvHSQsKHA
 
 - Agora a decidir entre scrapy e selenium.
 
@@ -50,3 +51,22 @@ sendo eles InfoMoney, Boletim Econômico e UOL Economia.
     - Data: "time.entry-date"
     - URL: <meta property="og:url" content="https://www.infomoney.com.br/mercados/analistas-dizem-que-petrobras-e-vale-estao-baratas-mas-exposicao-politica-da-petroleira-torna-investimento-mais-arriscado/">
     - Tags: "ul.article-terms"
+
+- A pesquisar mais a fundo as particularidades
+de ambos os frameworks (scrapy e selenium) para
+melhor tomada de decisão sobre qual utilizar.
+
+- Fonte de pesquisa sobre Scrapy:
+https://www.youtube.com/watch?v=ve_0h4Y8nuI&list=PLhTjy8cBISEqkN-5Ku_kXG4QW33sxQo0t
+
+- Fonte de pesquisa sobre Selenium:
+https://www.youtube.com/watch?v=Xjv1sY630Uc&list=PLzMcBGfZo4-n40rB1XaJ0ak1bemvlqumQ
+
+- Cheguei a conclusão de que a melhor abordagem
+seria a híbrida, utilizar scrapy para realizar
+o scrape em si e o selenium apenas em último caso
+para algum controle mais específico da página,
+e.g., clicar em algum botão de aceitar cookies.
+
+
+
