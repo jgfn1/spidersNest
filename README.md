@@ -1,7 +1,7 @@
 # spidersNest
 A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
 
-## Websites crawled: 
+## Websites crawled
   * [Boletim Econômico](https://boletimeconomico.com.br/)
   * [InfoMoney](https://www.infomoney.com.br/)
   * [Uol Economia](https://economia.uol.com.br/)
@@ -39,4 +39,4 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
     $ shub login
        API key: <api_key>
     $ shub deploy <project_id>
-  ```
+   ```
