@@ -75,22 +75,22 @@ encontravam-se incompletas, portanto, utilizarei
 a extensão SelectorGadget.
 
 - Spider do InfoMoney completo, 
-tempo de execução: 3.343783s
+tempo de execução: 39.624355s
 Fonte: informado no Scrapy Stats
 no log de execução
 
 - Spider do Boletim Econômico completo, 
-tempo de execução: 2.210992s
+tempo de execução: 5.573922s
 Fonte: informado no Scrapy Stats
 no log de execução
 
 - Spider do Uol Economia completo, 
-tempo de execução: 4.629252s
+tempo de execução: 5.930032s
 Fonte: informado no Scrapy Stats
 no log de execução
 
 - O uso do selenium acabou não se
-faz necessário, pois foi possível
+fazendo necessário, pois foi possível
 fazer todos os spiders apenas utilizando
 o scrapy.
 
