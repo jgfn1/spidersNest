@@ -123,3 +123,9 @@ posteriormente com o Scrapyd.
 - A corrigir erros de dependências do pip.
 
 - Spiders no ar e a salvar dados no MongoDB Atlas.
+
+- Readme escrito para facilitar reproducibilidade do desafio.
+
+- Links compartilhados para possibilitar a conferência do deploy e do banco de dados.
+
+- Câmbio, desliga.
