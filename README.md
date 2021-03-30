@@ -7,8 +7,10 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
   * [Uol Economia](https://economia.uol.com.br/)
 
 ## Setup your MongoDB
-  Docs: * [MongoDB Docs](https://docs.mongodb.com/manual/)
+  Docs: [MongoDB Docs](https://docs.mongodb.com/manual/)
+  
   After MongoDB is set, initialize the connection at a database.py file in the same folder of pipelines.py.
+  
   #### E.g. with MongoDB Atlas:
     #database.py
     import pymongo
@@ -27,9 +29,11 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
   $ scrapy crawl uolEconomia -o uolEconomia.jl 
 ```
 ## Deploy
-   Docs: * [Zyte (former Scrapy Cloud) Docs](https://support.zyte.com/support/solutions/22000084243)  
+   Docs: [Zyte (former Scrapy Cloud) Docs](https://support.zyte.com/support/solutions/22000084243)  
    #### E.g.:
+   
    After creating your account, project in Zyte and setting up dependencies:
+   
     ```{bash}
     $ pip install shub
     $ shub login
