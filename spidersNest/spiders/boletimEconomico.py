@@ -19,6 +19,8 @@ class BoletimEconomico(scrapy.Spider):
         yield {
             "title": title,
             "body": body,
+            "paragraph_count": len(body),
+            "word_count": len(''.join(body).split(' ')),
             "author": list(map(lambda item: item.replace('\t', '').replace('\n', ''), author)),
             "date": date,
             "tags": tags,

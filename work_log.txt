@@ -75,17 +75,17 @@ encontravam-se incompletas, portanto, utilizarei
 a extensão SelectorGadget.
 
 - Spider do InfoMoney completo, 
-tempo de execução: 1.983775s
+tempo de execução: 3.343783s
 Fonte: informado no Scrapy Stats
 no log de execução
 
 - Spider do Boletim Econômico completo, 
-tempo de execução: 2.097042s
+tempo de execução: 2.210992s
 Fonte: informado no Scrapy Stats
 no log de execução
 
 - Spider do Uol Economia completo, 
-tempo de execução: 12.691919s
+tempo de execução: 4.629252s
 Fonte: informado no Scrapy Stats
 no log de execução
 
@@ -93,3 +93,11 @@ no log de execução
 fazendo necessário, pois foi possível
 fazer todos os scrapers apenas utilizando
 o scrapy.
+
+- A atualizar spiders para contagem de
+parágrafos, o método utilizado será,
+por simplicidade, a contagem de elementos 
+do array do body.
+
+- Ainda a atualizar para contagem de
+palavras.

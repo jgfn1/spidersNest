@@ -37,6 +37,8 @@ class UolEconomia(scrapy.Spider):
         yield {
             "title": title,
             "body": body,
+            "paragraph_count": len(body),
+            "word_count": len(''.join(body).split(' ')),
             "author": author,
             "date": date,
             "tags": [],
