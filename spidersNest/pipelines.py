@@ -9,13 +9,18 @@ from itemadapter import ItemAdapter
 
 import pymongo
 
-
-
 class SpidersnestPipeline:
     def __init__(self):
         client = pymongo.MongoClient("mongodb+srv://spiderdb:spiderdb1@cluster0.i3n8n.mongodb.net/spidersNestData?retryWrites=true&w=majority")
         db = client.spidersNestData
-        self.collection = db['spiders_data_tb']
+        self.boletimEconomicoCollection = db['boletim_economico_data_tb']
+        self.infoMoneyCollection = db['info_money_data_tb']
+        self.uolEconomiaCollection = db['uol_economia_data_tb']
     def process_item(self, item, spider):
-        self.collection.insert(dict(item))
+        if(spider.name == "boletimEconomico"):
+            self.boletimEconomicoCollection.insert(dict(item))
+        elif(spider.name == "uolEconomia"):
+            self.uolEconomiaCollection.insert(dict(item))
+        elif(spider.name == "infoMoney"):
+            self.infoMoneyCollection.insert(dict(item))
         return item
