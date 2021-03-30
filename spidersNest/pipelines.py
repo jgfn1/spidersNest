@@ -16,6 +16,7 @@ class SpidersnestPipeline:
         self.boletimEconomicoCollection = db['boletim_economico_data_tb']
         self.infoMoneyCollection = db['info_money_data_tb']
         self.uolEconomiaCollection = db['uol_economia_data_tb']
+    
     def process_item(self, item, spider):
         if(spider.name == "boletimEconomico"):
             self.boletimEconomicoCollection.insert(dict(item))
