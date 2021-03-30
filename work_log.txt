@@ -41,8 +41,8 @@ sendo eles InfoMoney, Boletim Econômico e UOL Economia.
     - Corpo do texto: "div.entry-content"
     - Autor: "div.cs-entry__author-meta"
     - Data: "cs-meta-date"
-    - URL: <meta property="og:url" content="https://boletimeconomico.com.br/o-que-e-a-autonomia-do-banco-central/">
     - Tags: "div.cs-entry__tags"
+    - URL: <meta property="og:url" content="https://boletimeconomico.com.br/o-que-e-a-autonomia-do-banco-central/">
 
 - Metadados de artigo da InfoMoney:
     - Título: "div.page-title-1"
@@ -74,5 +74,12 @@ e.g., clicar em algum botão de aceitar cookies.
 encontravam-se incompletas, portanto, utilizarei
 a extensão SelectorGadget.
 
-- Spider do InfoMoney completo, tempo de execução: 1.983775s
+- Spider do InfoMoney completo, 
+tempo de execução: 1.983775s
+Fonte: informado no Scrapy Stats
+no log de execução
 
+- Spider do Boletim Econômico completo, 
+tempo de execução: 2.097042s
+Fonte: informado no Scrapy Stats
+no log de execução
