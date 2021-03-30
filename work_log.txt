@@ -83,3 +83,13 @@ no log de execução
 tempo de execução: 2.097042s
 Fonte: informado no Scrapy Stats
 no log de execução
+
+- Spider do Uol Economia completo, 
+tempo de execução: 12.691919s
+Fonte: informado no Scrapy Stats
+no log de execução
+
+- O uso do selenium acabou não se
+fazendo necessário, pois foi possível
+fazer todos os scrapes apenas utilizando
+o scrapy.
