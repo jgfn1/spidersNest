@@ -115,3 +115,11 @@ posteriormente com o Scrapyd.
 - A persistir dados no MongoDB.
 
 - A criar pipeline.
+
+- Dados persistidos no MongoDB.
+
+- A realizar deploy no Zyte.
+
+- A corrigir erros de dependências do pip.
+
+- Spiders no ar e a salvar dados no MongoDB Atlas.
