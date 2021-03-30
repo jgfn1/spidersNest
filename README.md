@@ -34,7 +34,7 @@ A webcrawler application with Scrapy, Zyte and MongoDB Atlas.
    
    After creating your account, project in Zyte and setting up dependencies:
    
-    ```{bash}
+   ```{bash}
     $ pip install shub
     $ shub login
        API key: <api_key>
