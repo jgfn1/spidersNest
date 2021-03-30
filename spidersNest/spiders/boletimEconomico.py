@@ -1,6 +1,6 @@
 import scrapy
 
-class InfoMoneySpider(scrapy.Spider):
+class BoletimEconomico(scrapy.Spider):
     name = 'boletimEconomico'
     start_urls = ["https://boletimeconomico.com.br/"]
 
