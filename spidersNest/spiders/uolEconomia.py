@@ -16,16 +16,29 @@ class UolEconomia(scrapy.Spider):
         if(len(title) == 0):
             raise Exception("Article not in standard format, it is going to be ignored.")
         body = response.css("div.text p ::text").extract()
-        # author = response.css(".single .open-tooltip::text").extract()
-        # if(len(author) == 0):
-        #     author = response.css("p.p-author ::text").extract()
-        # date = response.css("p.p-author time::text").extract()
-        # tags = response.css("div.cs-entry__tags ::text").extract()
+        author = response.css(".single .open-tooltip::text").extract()
+        if(len(author) == 0):
+            author = response.css("p.p-author ::text").extract()
+        if(len(author) == 0):
+            raise Exception("Article not in standard format, it is going to be ignored.")
+        elif(author[0][0].isalpha()):
+            if(len(author) == 2):
+                date = author[1]
+            elif(len(author) == 3):
+                date = author[2]
+            author = author[0]
+        elif(author[0][0].isdigit()):
+            date = author[0]
+            author = ["Uol"]
+        
+        author = author.split('-')[0]
+            
+        tags = response.css("div.cs-entry__tags ::text").extract()
         yield {
-            # "title": title,
-            # "body": body,
-            "author": [list(map(lambda item: item.replace('\t', '').replace('  ', ''), author))[0]],
-            # "date": date,
-            # "tags": tags,
+            "title": title,
+            "body": body,
+            "author": author,
+            "date": date,
+            "tags": [],
             "url": response.url,
         }
